@@ -9,6 +9,10 @@ pip install django
 django-admin.py startproject learning_log .
 python manage.py migrate  # create database
 python manage.py runserver  # run server
+python manage.py startapp learning_logs  # create app
+python manage.py makemigration learning_logs  # change db for app
+python manage.py migrate  # run migrate
+python manage.py createsuperuser  # create administrator
 ```
 
 ### Preparation for development
